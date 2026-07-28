@@ -6,30 +6,32 @@
         <title>Steven | Full-Stack Developer</title>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="bg-[#050507] text-white  p-8">
-        {{-- BG LAYERS - NAKA FIXED PARA KAHIT MAG SCROLL KA NANDUN PA RIN --}}
+    <body class="bg-[#050507] text-white">
         <div class="fixed inset-0 -z-50">
             {{-- Small grid dots --}}
             <div class="absolute inset-0 opacity-25 bg-dots"></div>
-
         </div>
 
 
         {{-- Navigation --}}
+        <section class="p-8">
         <x-navbar/>
-
+        </section>
         <main>
             {{-- Hero --}}
             <x-hero/>
+
+        <hr class="border-white/25">
+
             {{-- About  --}}
+            <x-about/>
 
-            {{-- Skills --}}
-
-            {{-- Project --}}
 
             {{-- Contact --}}
+            <x-contact/>
 
             {{-- Footer --}}
+            <x-footer/>
         </main>
     </body>
 </html>
