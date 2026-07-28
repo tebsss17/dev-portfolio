@@ -15,23 +15,34 @@
 
         {{-- Navigation --}}
         <section class="p-8">
-        <x-navbar/>
+            <x-navbar/>
         </section>
-        <main>
-            {{-- Hero --}}
+
+        {{-- Hero --}}
+        <section  class="p-8">
             <x-hero/>
+        </section>
 
         <hr class="border-white/25">
 
-            {{-- About  --}}
+        {{-- About  --}}
+        <section class="p-8">
             <x-about/>
+        </section>
 
+        <hr class="border-white/25">
 
-            {{-- Contact --}}
+        {{-- Contact --}}
+        <section class="p-8">
             <x-contact/>
+        </section>
 
-            {{-- Footer --}}
+        <hr class="border-white/25">
+
+        {{-- Footer --}}
+        <section class="p-8">
             <x-footer/>
-        </main>
+        </section>
+
     </body>
 </html>
