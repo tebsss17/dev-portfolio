@@ -12,19 +12,9 @@
                 </p>
             </div>
             {{-- Right --}}
-            <div class="flex-1 w-full">
-                <div class="border border-[#A1A1AA]/50 py-2 rounded-4xl">
-                    <p class="font-semibold text-3xl mb-10 text-center py-6">Profile Details</p>
+            <div class="flex-1 w-full grid grid-cols-2 gap-4">
+                <div class="border-[#A1A1AA]/50  bg-[#0A0C12] hover:bg-[#2d2d36]">
 
-                    <div class="space-y-6 px-8 py-4">
-                        <p>Name</p>
-
-                        <p>Education</p>
-
-                        <p>Role</p>
-
-                        <p>Location</p>
-                    </div>
                 </div>
             </div>
         </div>
