@@ -32,6 +32,13 @@
 
         <hr class="border-white/25">
 
+        {{-- Projects --}}
+        <section class="p-8">
+            <x-projects/>
+        </section>
+
+        <hr class="border-white/25">
+
         {{-- Contact --}}
         <section class="p-8">
             <x-contact/>

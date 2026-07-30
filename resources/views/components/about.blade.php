@@ -7,8 +7,8 @@
                 <p class="font-bold text-3xl lg:text-6xl mb-10">About Me</p>
 
                 <p class="leading-loose text-secondary">
-                    I'm Marc Steven Nagamany, a junior web developer passionate about creating responsive and user-friendly web applications.
-                    I specialize in Laravel, PHP, MySQL, and Tailwind CSS, while continuously learning and improving my skills to build better digital solutions.
+                    I'm Marc Steven Nagamany, an aspiring junior web developer passionate about creating responsive and user-friendly web applications.
+                    I specialize in TALL stack development, while continuously learning and improving my skills to build better digital solutions.
                 </p>
             </div>
             {{-- Right --}}
