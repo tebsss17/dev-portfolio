@@ -1,4 +1,4 @@
-<div class="flex items-center justify-center min-h-screen">
+<div class="flex items-center justify-center min-h-screen" id="home">
     <div class="max-w-7xl flex items-center gap-20 w-full  flex-col-reverse lg:flex-row lg:justify-between">
         {{-- Left --}}
         <div class="max-w-2xl text-center lg:text-left">
