@@ -1,4 +1,3 @@
-@import url('https://cdn.jsdelivr.net/gh/devchauhann/fonts@v1.1.0/cdn/v1/css/all.css');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @import 'tailwindcss';
@@ -19,9 +18,12 @@
     background-size: 32px 32px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Space Mono', monospace;
-  scroll-behavior: smooth;
 }
 
 .text-primary {
@@ -36,6 +38,3 @@ body {
     color: #71717B;
 }
 
-.btn-main {
-    background-color: #1D4E89;
-}

@@ -12,7 +12,7 @@
 
             <div class="mt-10 flex gap-5 justify-center lg:justify-start">
                 <a href="#projects"
-                    class="rounded-xl px-6 py-3 bg-[#1D4E89] hover:bg-[#3B82F6] transition-all duration-300"
+                    class="rounded-xl px-6 py-3 bg-[#5290DA] hover:bg-[#3B82F6] transition-all duration-300"
                 >
                     View Projects
                 </a>
