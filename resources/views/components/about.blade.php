@@ -1,7 +1,7 @@
 <div id="about" class="flex justify-center p-8">
     <div class="max-w-7xl w-full">
 
-        <div class="flex gap-20 flex-col lg:flex-row lg:justify-between">
+        <div class="flex gap-20 flex-col xl:flex-row lg:justify-between">
             {{-- Left --}}
             <div class="flex-1 ">
                 <p class="font-bold text-3xl lg:text-6xl mb-10">About Me</p>
@@ -66,44 +66,37 @@
         </div>
 
         {{-- Tech Stack --}}
-       <div class="mt-12 border-t border-white/5 pt-10">
-    <p class="font-mono text- tracking-[0.2em] text-[#A1A1AA] mb-6">TECHNOLOGIES I USE</p>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-        {{-- Backend + DB --}}
-        <div>
-            <p class="font-mono text- text-[#5290DA] mb-3">BACKEND & DATABASE</p>
-            <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-2 rounded-xl bg-[#0A0C12] border border-white/10 text-main text-sm">Laravel</span>
-                <span class="px-3 py-2 rounded-xl bg-[#0A0C12] border border-white/10 text-main text-sm">PHP</span>
-                <span class="px-3 py-2 rounded-xl bg-[#0A0C12] border border-white/10 text-main text-sm">MySQL</span>
-                <span class="px-3 py-2 rounded-xl bg-[#0A0C12] border border-white/10 text-main text-sm">PostgreSQL</span>
-                <span class="px-3 py-2 rounded-xl bg-[#0A0C12] border border-white/10 text-main text-sm">SQLite</span>
-                <span class="px-3 py-2 rounded-xl bg-[#0A0C12] border border-white/10 text-main text-sm">RESTful API</span>
-            </div>
+        <div class="mt-20 flex justify-center items-center gap-8">
+            <div class="h-px flex-1 bg-gradient-to-r from-transparent to-[#FAFAF9]/50"></div>
+                <p class="text-xl md:text-2xl font-semibold tracking-normal">TECH STACK</p>
+            <div class="h-px flex-1 bg-gradient-to-l from-transparent to-[#FAFAF9]/50"></div>
         </div>
 
-        {{-- Frontend --}}
-        <div>
-            <p class="font-mono text- text-[#5290DA] mb-3">FRONTEND</p>
-            <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-2 rounded-xl bg-[#0A0C12] border border-white/10 text-main text-sm">Tailwind</span>
-                <span class="px-3 py-2 rounded-xl bg-[#0A0C12] border border-white/10 text-main text-sm">Alpine.js</span>
-                <span class="px-3 py-2 rounded-xl bg-[#0A0C12] border border-white/10 text-main text-sm">HTML</span>
-                <span class="px-3 py-2 rounded-xl bg-[#0A0C12] border border-white/10 text-main text-sm">CSS</span>
-            </div>
-        </div>
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+            {{-- Frontend --}}
+            <div class="flex flex-col  border-blue-400 border p-6">
+                <div class="text-center">
+                    <p>Frontend</p>
+                </div>
 
-        {{-- Tools --}}
-        <div>
-            <p class="font-mono text- text-[#5290DA] mb-3">TOOLS & DEPLOY</p>
-            <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-2 rounded-xl bg-[#0A0C12] border border-white/10 text-main text-sm">Git</span>
-                <span class="px-3 py-2 rounded-xl bg-[#0A0C12] border border-white/10 text-main text-sm">GitHub</span>
-                <span class="px-3 py-2 rounded-xl bg-[#0A0C12] border border-white/10 text-main text-sm">Vercel</span>
-                <span class="px-3 py-2 rounded-xl bg-[#0A0C12] border border-white/10 text-main text-sm">Netlify</span>
+                <div class="flex flex-wrap gap-4 justify-center sm:justify-start">
+                    <div class="flex gap-3 items-center border-white/10 border p-4 rounded-2xl group-hover:-translate-y-2 duration-300 transition-all">
+                        <img src="/images/alpinejs.svg" alt="alpineJS" class="size-10">
+                        <span class="text-sm font-medium">AlpineJS</span>
+                    </div>
+
+                    <div class="flex gap-3 items-center border-white/10 border p-4 rounded-2xl group-hover:-translate-y-2 duration-300 transition-all">
+                        <img src="/images/alpinejs.svg" alt="alpineJS" class="size-10">
+                        <span class="text-sm font-medium">AlpineJS</span>
+                    </div>
+                </div>
             </div>
+
+            {{-- Backend --}}
+
+            {{-- Database --}}
+
+            {{-- Tools --}}
         </div>
 
     </div>
