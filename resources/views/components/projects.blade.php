@@ -1,10 +1,10 @@
-<class id="projects" class="py-12 px-8 ">
+<div id="projects" class="py-12 px-8 ">
     <div class="max-w-7xl mx-auto">
 
         <div class="max-w-3xl">
 
             <h2 class="text-4xl lg:text-5xl font-bold">
-                Things I've Built
+                Featured Projects
             </h2>
 
             <p class="mt-6 leading-8 text-secondary">
@@ -13,22 +13,95 @@
             </p>
         </div>
 
-        {{-- Project 1 --}}
-        <div class="mt-20 grid lg:grid-cols-2 gap-14 items-stretch">
+        {{-- Project Lectica --}}
+        <div class="mt-20 grid lg:grid-cols-2 gap-16 items-start">
 
-            {{-- Picture --}}
-            <div
-                class="overflow-hidden rounded-3xl border border-white/10 bg-[#131722] order-1">
+            {{-- LEFT --}}
+            <div>
 
-                <img
-                    src="/images/chartjs.svg"
-                    class="w-full object-cover transition duration-500 hover:scale-105">
+                {{-- Screenshot --}}
+                <div class="overflow-hidden rounded-3xl border border-white/10 bg-[#131722]">
+                    <img
+                        id="lectica-images"
+                        src="/images/l1.png"
+                        class="w-full object-cover transition duration-500 hover:scale-[1.02]">
+                </div>
+
+                {{-- Desktop Only --}}
+                <div class="hidden lg:block">
+
+                    {{-- Tech Stack --}}
+                    <div class="mt-8 flex flex-wrap gap-3">
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/laravel.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Laravel</span>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/vue.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Vue.js</span>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/postgresql.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">PostgreSQL</span>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/chartjs.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Chart.js</span>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/tailwindcss.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Tailwind CSS</span>
+                        </div>
+
+                    </div>
+
+                    {{-- Buttons --}}
+                    <div class="mt-8 flex flex-wrap gap-4">
+
+                        <a
+                            href="https://drive.google.com/file/d/14zxUhrOAB-tIEViD-kvCV_eNKz-ok30t/view?usp=drive_link"
+                            target="_blank"
+                            class="rounded-xl inline-flex items-center gap-3 bg-[#5290DA] px-6 py-3 font-medium transition-all duration-300 hover:-translate-y-1 hover:bg-[#3B82F6]">
+                            Live Demo
+                        </a>
+
+                        <a
+                            href="https://github.com/nohlsv/Lectica"
+                            target="_blank"
+                            class="rounded-xl border border-white/10 bg-[#131722] px-6 py-3 font-medium transition-all duration-300 hover:-translate-y-2 hover:border-[#5290DA]/40">
+                            Source Code
+                        </a>
+
+                    </div>
+
+                </div>
 
             </div>
 
-            {{-- Details --}}
-            <div class="order-2">
+            {{-- RIGHT --}}
+            <div>
 
+                {{-- Badge --}}
                 <div class="flex flex-wrap gap-2">
 
                     <span class="rounded-full bg-[#5290DA]/15 px-3 py-1 text-xs text-[#5290DA]">
@@ -37,17 +110,19 @@
 
                 </div>
 
+                {{-- Title --}}
                 <h3 class="mt-5 text-4xl font-bold">
                     Lectica
                 </h3>
 
+                {{-- Description --}}
                 <p class="mt-6 leading-8 text-secondary">
-                    An AI-powered educational gamification platform designed to enhance student engagement through interactive learning experiences,
-                    quizzes, and a modern classroom management system.
+                    An AI-powered educational gamification platform designed to enhance student engagement and retention
+                    through interactive learning experiences, quizzes, and a modern classroom management system.
                 </p>
 
                 {{-- Role --}}
-                <div class="mt-8">
+                <div class="mt-10">
 
                     <p class="text-sm uppercase tracking-widest text-[#5290DA]">
                         Role
@@ -59,101 +134,172 @@
 
                 </div>
 
-                {{-- Contributions --}}
-                <div class="mt-8">
+                {{-- Features --}}
+                <div class="mt-10">
 
                     <p class="text-sm uppercase tracking-widest text-[#5290DA]">
                         Key Features
                     </p>
 
-                    <ul class="mt-3 space-y-2 text-secondary">
+                    <ul class="mt-4 space-y-3 text-secondary">
 
-                        <li>• AI-Powered Quiz Generation</li>
+                        <li>✓ AI Quiz Generation</li>
 
-                        <li>• Gamified Learning Activities</li>
+                        <li>✓ Student Progress Tracking</li>
 
-                        <li>• Real-Time Multiplayer Duels</li>
+                        <li>✓ Real-Time Multiplayer Duels</li>
 
-                        <li>• Student Progress Tracking</li>
+                        <li>✓ Gamified Learning Experience</li>
 
                     </ul>
 
                 </div>
 
-                {{-- Tech --}}
-                <div class="mt-8 flex flex-wrap gap-3">
+                {{-- Mobile Only --}}
+                <div class="lg:hidden">
 
-                    <div
-                        class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+                    {{-- Tech Stack --}}
+                    <div class="mt-10 flex flex-wrap gap-3">
 
-                        <img src="images/laravel.svg" alt="laravel" class="size-6">
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
 
-                        <span class="text-sm font-medium text-main">Laravel</span>
+                            <img src="images/laravel.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Laravel</span>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/vue.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Vue.js</span>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/postgresql.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">PostgreSQL</span>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/chartjs.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Chart.js</span>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/tailwindcss.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Tailwind CSS</span>
+                        </div>
+
                     </div>
 
-                    <div
-                        class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+                    {{-- Buttons --}}
+                    <div class="mt-8 flex flex-wrap gap-4">
 
-                        <img src="images/vue.svg" alt="laravel" class="size-6">
-
-                        <span class="text-sm font-medium text-main">Vue.js</span>
+                        <a
+                            href="https://github.com/nohlsv/Lectica"
+                            target="_blank"
+                            class="rounded-xl border border-white/10 bg-[#131722] px-6 py-3 font-medium transition-all duration-300 hover:-translate-y-2 hover:border-[#5290DA]/40">
+                            Source Code
+                        </a>
                     </div>
+                </div>
+            </div>
+        </div>
 
-                    <div
-                        class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+        {{-- Project BOC --}}
+        <div class="mt-20 grid lg:grid-cols-2 gap-16 items-start">
 
-                        <img src="images/postgresql.svg" alt="laravel" class="size-6">
+            {{-- LEFT --}}
+            <div>
 
-                        <span class="text-sm font-medium text-main">PostgreSQL</span>
-                    </div>
-
-                    <div
-                        class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
-
-                        <img src="images/chartjs.svg" alt="laravel" class="size-6">
-
-                        <span class="text-sm font-medium text-main">Chart.js</span>
-                    </div>
-
-                    <div
-                        class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
-
-                        <img src="images/tailwindcss.svg" alt="laravel" class="size-6">
-
-                        <span class="text-sm font-medium text-main">Tailwind CSS</span>
-                    </div>
-
+                {{-- Screenshot --}}
+                <div class="overflow-hidden rounded-3xl border border-white/10 bg-[#131722]">
+                    <img
+                        id="boc-images"
+                        src="/images/a3.png"
+                        class="w-full object-cover transition duration-500 hover:scale-[1.02]">
                 </div>
 
-                {{-- Buttons --}}
-                <div class="mt-10 flex flex-wrap gap-4">
+                {{-- Desktop Only --}}
+                <div class="hidden lg:block">
 
-                    <a
-                        href="https://drive.google.com/file/d/14zxUhrOAB-tIEViD-kvCV_eNKz-ok30t/view?usp=sharing"
-                        target="_blank"
-                        class="rounded-xl px-6 py-3 bg-[#5290DA] hover:bg-[#3B82F6] transition-all duration-300 hover:-translate-y-2">
-                        Live Demo
-                    </a>
+                    {{-- Tech Stack --}}
+                    <div class="mt-8 flex flex-wrap gap-3">
 
-                    <a
-                        href="https://github.com/nohlsv/Lectica"
-                        target="_blank"
-                        class="rounded-xl border border-white/10 bg-[#131722] px-6 py-3 font-medium transition-all duration-300 hover:-translate-y-2 hover:border-[#5290DA]/40">
-                        Source Code
-                    </a>
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/laravel.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Laravel</span>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/postgresql.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">PostgreSQL</span>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/alpinejs.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Alpine.js</span>
+                        </div>
+
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/chartjs.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Chart.js</span>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/tailwindcss.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Tailwind CSS</span>
+                        </div>
+
+                    </div>
+
+                    {{-- Buttons --}}
+                    <div class="mt-8 flex flex-wrap gap-4">
+
+                        <a
+                            href="https://github.com/tebsss17/BOC-VBS-2026"
+                            target="_blank"
+                            class="rounded-xl border border-white/10 bg-[#131722] px-6 py-3 font-medium transition-all duration-300 hover:-translate-y-2 hover:border-[#5290DA]/40">
+                            Source Code
+                        </a>
+
+                    </div>
 
                 </div>
 
             </div>
 
-        </div>
+            {{-- RIGHT --}}
+            <div>
 
-        {{-- Project 2--}}
-        <div class="mt-25 grid lg:grid-cols-2 gap-14 items-stretch">
-
-            {{-- Content --}}
-            <div class="order-2 lg:order-1">
-
+                {{-- Badge --}}
                 <div class="flex flex-wrap gap-2">
 
                     <span class="rounded-full bg-[#5290DA]/15 px-3 py-1 text-xs text-[#5290DA]">
@@ -162,17 +308,19 @@
 
                 </div>
 
+                {{-- Title --}}
                 <h3 class="mt-5 text-4xl font-bold">
                     BOC Attendance Management System
                 </h3>
 
+                {{-- Description --}}
                 <p class="mt-6 leading-8 text-secondary">
                     A web-based attendance management system designed to streamline attendance tracking, record management,
                     and reporting through a simple and efficient interface.
                 </p>
 
                 {{-- Role --}}
-                <div class="mt-8">
+                <div class="mt-10">
 
                     <p class="text-sm uppercase tracking-widest text-[#5290DA]">
                         Role
@@ -184,104 +332,181 @@
 
                 </div>
 
-                {{-- Contributions --}}
-                <div class="mt-8">
+                {{-- Features --}}
+                <div class="mt-10">
 
                     <p class="text-sm uppercase tracking-widest text-[#5290DA]">
                         Key Features
                     </p>
 
-                    <ul class="mt-3 space-y-2 text-secondary">
+                    <ul class="mt-4 space-y-3 text-secondary">
 
-                        <li>• Attendance Reports & Analytics</li>
+                        <li>✓ Real-Time Attendance Logs</li>
 
-                        <li>• Real-Time Attendance Logs</li>
+                        <li>✓ Student Management</li>
 
-                        <li>• Student Management</li>
+                        <li>✓ Attendance Reports</li>
 
-                        <li>• Search & Filter</li>
+                        <li>✓ Data Analytics & Reporting</li>
 
                     </ul>
 
                 </div>
 
-                {{-- Tech --}}
-                <div class="mt-8 flex flex-wrap gap-3">
+                {{-- Mobile Only --}}
+                <div class="lg:hidden">
 
-                    <div
-                        class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+                    {{-- Tech Stack --}}
+                    <div class="mt-10 flex flex-wrap gap-3">
 
-                        <img src="images/laravel.svg" alt="laravel" class="size-6">
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
 
-                        <span class="text-sm font-medium text-main">Laravel</span>
+                            <img src="images/laravel.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Laravel</span>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/postgresql.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">PostgreSQL</span>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/alpinejs.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Alpine.js</span>
+                        </div>
+
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/chartjs.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Chart.js</span>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/tailwindcss.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Tailwind CSS</span>
+                        </div>
+
                     </div>
 
-                    <div
-                        class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+                    {{-- Buttons --}}
+                    <div class="mt-8 flex flex-wrap gap-4">
 
-                        <img src="images/postgresql.svg" alt="laravel" class="size-6">
-
-                        <span class="text-sm font-medium text-main">PostgreSQL</span>
+                        <a
+                            href="https://github.com/tebsss17/BOC-VBS-2026"
+                            target="_blank"
+                            class="rounded-xl border border-white/10 bg-[#131722] px-6 py-3 font-medium transition-all duration-300 hover:-translate-y-2 hover:border-[#5290DA]/40">
+                            Source Code
+                        </a>
                     </div>
-
-                    <div
-                        class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
-
-                        <img src="images/chartjs.svg" alt="laravel" class="size-6">
-
-                        <span class="text-sm font-medium text-main">Chart.js</span>
-                    </div>
-
-                    <div
-                        class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
-
-                        <img src="images/tailwindcss.svg" alt="laravel" class="size-6">
-
-                        <span class="text-sm font-medium text-main">Tailwind CSS</span>
-                    </div>
-
                 </div>
-
-                {{-- Buttons --}}
-                <div class="mt-10 flex flex-wrap gap-4">
-
-                    <a
-                        href="https://github.com/tebsss17/BOC-VBS-2026"
-                        target="_blank"
-                        class="rounded-xl border border-white/10 bg-[#131722] px-6 py-3 font-medium transition-all duration-300 hover:-translate-y-2 hover:border-[#5290DA]/40">
-                        Source Code
-                    </a>
-
-                </div>
-
             </div>
-
-            {{-- Image --}}
-            <div class="order-1 lg:order-2 overflow-hidden rounded-3xl border border-white/10 bg-[#131722]">
-
-                <img
-                    src="/images/chartjs.svg"
-                    class="w-full object-cover transition duration-500 hover:scale-105">
-
-            </div>
-
         </div>
 
-        {{-- Project 3 --}}
-        <div class="mt-25 grid lg:grid-cols-2 gap-14 items-stretch">
+        {{-- Project Finance Tracker --}}
+        <div class="mt-20 grid lg:grid-cols-2 gap-16 items-start">
 
-            {{-- Picture --}}
-            <div class="overflow-hidden rounded-3xl border border-white/10 bg-[#131722] order-1">
+            {{-- LEFT --}}
+            <div>
 
-                <img
-                    src="/images/chartjs.svg"
-                    class="w-full object-cover transition duration-500 hover:scale-105">
+                {{-- Screenshot --}}
+                <div class="overflow-hidden rounded-3xl border border-white/10 bg-[#131722]">
+                    <img
+                        src="/images/b1.png"
+                        class="w-full object-cover transition duration-500 hover:scale-[1.02]">
+                </div>
+
+                {{-- Desktop Only --}}
+                <div class="hidden lg:block">
+
+                    {{-- Tech Stack --}}
+                    <div class="mt-8 flex flex-wrap gap-3">
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/laravel.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Laravel</span>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/livewire.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Livewire</span>
+                        </div>
+
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/postgresql.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">PostgreSQL</span>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/alpinejs.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Alpine.js</span>
+                        </div>
+
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/chartjs.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Chart.js</span>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/tailwindcss.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Tailwind CSS</span>
+                        </div>
+
+                    </div>
+
+                    {{-- Buttons --}}
+                    <div class="mt-8 flex flex-wrap gap-4">
+
+                        <a
+                            href="https://github.com/tebsss17/Budget-Tracker"
+                            target="_blank"
+                            class="rounded-xl border border-white/10 bg-[#131722] px-6 py-3 font-medium transition-all duration-300 hover:-translate-y-2 hover:border-[#5290DA]/40">
+                            Source code
+                        </a>
+
+                    </div>
+
+                </div>
 
             </div>
 
-            {{-- Details --}}
-            <div class="order-2">
+            {{-- RIGHT --}}
+            <div>
 
+                {{-- Badge --}}
                 <div class="flex flex-wrap gap-2">
 
                     <span class="rounded-full bg-yellow-500/15 px-3 py-1 text-xs text-yellow-400">
@@ -294,16 +519,18 @@
 
                 </div>
 
+                {{-- Title --}}
                 <h3 class="mt-5 text-4xl font-bold">
-                    Finance Tracker
+                    Personal Finance Tracker
                 </h3>
 
+                {{-- Description --}}
                 <p class="mt-6 leading-8 text-secondary">
-                    A modern finance management application designed to help users manage accounts, budgets, income, expenses, and analytics in one centralized platform.
+                   A modern finance management application designed to help users manage accounts, budgets, income, expenses, and analytics in one centralized platform.
                 </p>
 
                 {{-- Role --}}
-                <div class="mt-8">
+                <div class="mt-10">
 
                     <p class="text-sm uppercase tracking-widest text-[#5290DA]">
                         Role
@@ -315,87 +542,98 @@
 
                 </div>
 
-                {{-- Contributions --}}
-                <div class="mt-8">
+                {{-- Features --}}
+                <div class="mt-10">
 
                     <p class="text-sm uppercase tracking-widest text-[#5290DA]">
                         Key Features
                     </p>
 
-                    <ul class="mt-3 space-y-2 text-secondary">
+                    <ul class="mt-4 space-y-3 text-secondary">
 
-                        <li>• Budget Management</li>
+                        <li>✓ Budget Management</li>
 
-                        <li>• Income & Expense Tracking</li>
+                        <li>✓ Income & Expense Tracking</li>
 
-                        <li>• Multiple Accounts</li>
+                        <li>✓ Multiple Accounts</li>
 
-                        <li>• Progressive Web App (PWA)</li>
+                        <li>✓ Progressive Web App</li>
 
                     </ul>
 
                 </div>
 
-                {{-- Tech --}}
-                <div class="mt-8 flex flex-wrap gap-3">
+                {{-- Mobile Only --}}
+                <div class="lg:hidden">
 
-                    <div
-                        class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+                    {{-- Tech Stack --}}
+                    <div class="mt-10 flex flex-wrap gap-3">
 
-                        <img src="images/laravel.svg" alt="laravel" class="size-6">
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
 
-                        <span class="text-sm font-medium text-main">Laravel</span>
+                            <img src="images/laravel.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Laravel</span>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/livewire.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Livewire</span>
+                        </div>
+
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/postgresql.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">PostgreSQL</span>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/alpinejs.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Alpine.js</span>
+                        </div>
+
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/chartjs.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Chart.js</span>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                            <img src="images/tailwindcss.svg" alt="laravel" class="size-6">
+
+                            <span class="text-sm font-medium text-main">Tailwind CSS</span>
+                        </div>
+
                     </div>
 
-                    <div
-                        class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+                    {{-- Buttons --}}
+                    <div class="mt-8 flex flex-wrap gap-4">
 
-                        <img src="images/livewire.svg" alt="laravel" class="size-6">
-
-                        <span class="text-sm font-medium text-main">Livewire</span>
+                        <a
+                            href="https://github.com/tebsss17/Budget-Tracker"
+                            target="_blank"
+                            class="rounded-xl border border-white/10 bg-[#131722] px-6 py-3 font-medium transition-all duration-300 hover:-translate-y-2 hover:border-[#5290DA]/40">
+                            Source Code
+                        </a>
                     </div>
-
-                    <div
-                        class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
-
-                        <img src="images/postgresql.svg" alt="laravel" class="size-6">
-
-                        <span class="text-sm font-medium text-main">PostgreSQL</span>
-                    </div>
-
-                    <div
-                        class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
-
-                        <img src="images/alpinejs.svg" alt="laravel" class="size-6">
-
-                        <span class="text-sm font-medium text-main">Alpine.js</span>
-                    </div>
-
-                    <div
-                        class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-3 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
-
-                        <img src="images/tailwindcss.svg" alt="laravel" class="size-6">
-
-                        <span class="text-sm font-medium text-main">Tailwind CSS</span>
-                    </div>
-
                 </div>
-
-                {{-- Buttons --}}
-                <div class="mt-10 flex flex-wrap gap-4">
-
-                    <a
-                        href="https://github.com/tebsss17/Budget-Tracker"
-                        target="_blank"
-                        class="rounded-xl border border-white/10 bg-[#131722] px-6 py-3 font-medium transition-all duration-300 hover:-translate-y-2 hover:border-[#5290DA]/40">
-                        Source Code
-                    </a>
-
-                </div>
-
             </div>
-
         </div>
 
     </div>
-</class>
+</div>

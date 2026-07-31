@@ -1,4 +1,4 @@
-<section id="contact" class="py-12">
+<div id="contact" class="py-12">
     <div class="max-w-7xl mx-auto px-8">
 
         <div class="max-w-3xl">
@@ -27,4 +27,4 @@
         </div>
 
     </div>
-</section>
+</div>
