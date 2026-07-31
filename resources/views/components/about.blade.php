@@ -121,6 +121,14 @@
                         <span class="text-sm font-medium text-main">Alpine.js</span>
                     </div>
 
+                    <div
+                        class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-4 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                        <img src="images/chartjs.svg" alt="chartjs" class="size-6">
+
+                        <span class="text-sm font-medium text-main">Chart.js</span>
+                    </div>
+
                 </div>
             </div>
 
@@ -239,7 +247,7 @@
 
                         <img src="images/github-dark.svg" alt="github" class="size-6">
 
-                        <span class="text-sm font-medium text-main">Github</span>
+                        <span class="text-sm font-medium text-main">GitHub</span>
                     </div>
 
                 </div>

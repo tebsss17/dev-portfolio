@@ -1,12 +1,9 @@
-<section id="contact" class="py-20">
-    <div class="max-w-7xl mx-auto">
+<section id="contact" class="py-12">
+    <div class="max-w-7xl mx-auto px-8">
 
         <div class="max-w-3xl">
-            <span class="text-[#5290DA] font-medium">
-                Get In Touch
-            </span>
 
-            <h2 class="mt-4 text-4xl lg:text-6xl font-bold leading-tight">
+            <h2 class="text-4xl lg:text-6xl font-bold leading-tight">
                 Let's Work Together
             </h2>
 
